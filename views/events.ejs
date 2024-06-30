@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Engagement Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #c2ebbb;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            background-color: #e16599; 
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        
+        .nav {
+            margin-top: 10px;
+        }
+        
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        
+        .container {
+            background-color: #eeeecf;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        
+        .form-group {
+            margin-bottom: 1em;
+        }
+        
+        label {
+            font-weight: bold;
+            color: #030303; /* Blue */
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 8px;
+            font-size: 1em;
+            border: 1px solid #0e0e0e; /* Blue border */
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        select.form-control {
+            height: 38px;
+        }
+        
+        .btn-primary {
+            background-color: #6c757d; /* Gray for submit button */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        
+        .btn-primary:hover {
+            background-color: #5a6268; /* Darker gray on hover */
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #007bff; /* Blue border top */
+        }
+        
+        .footer p {
+            margin: 0;
+        }
+        
+        .footer a {
+            color: #007bff; /* Blue for footer links */
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Community Engagement</h1>
+        <div class="nav">
+            <a href="/">About</a>
+            <a href="/">Inspiration</a>
+            <a href="/">Gallery</a>
+            <a href="/">Events</a>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <h2>Community Engagement Form</h2>
+        <form action="/submit" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select class="form-control" id="gender" name="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" class="form-control" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label for="community">Community:</label>
+                <select class="form-control" id="community" name="community" required>
+                    <option value="Srikakulam">Srikakulam</option>
+                    <option value="Parvathipuram Manyam">Parvathipuram Manyam</option>
+                    <option value="Visakhapatnam">Visakhapatnam</option>
+                    <option value="Vizianagaram">Vizianagaram</option>
+                    <option value="Anakapalli">Anakapalli</option>
+                    <option value="Kakinada">Kakinada</option>
+                    <option value="Konaseema">Konaseema</option>
+                    <option value="East Godavari">East Godavari</option>
+                    <option value="Eluru">Eluru</option>
+                    <option value="NTR District">NTR District</option>
+                    <option value="Guntur">Guntur</option>
+                    <option value="West Godavari">West Godavari</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="event">Event:</label>
+                <select class="form-control" id="event" name="event" required>
+                    <option value="Volunteering">Volunteering</option>
+                    <option value="Helping the Homeless">Helping the Homeless</option>
+                    <option value="Recycling Program">Recycling Program</option>
+                    <option value="Clean Up">Clean Up</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div class="footer">
+            <p>&copy; 2024 Community Engagement Platform | <a href="/contact">Contact Us</a></p>
+        </div>
+    </div>
+</body>
+</html>

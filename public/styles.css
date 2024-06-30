@@ -1,0 +1,98 @@
+styles.css
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+}
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid #ddd;
+}
+
+/* Header Styles */
+.header {
+    background: #f8f9fa;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+    color: brown;
+}
+
+.nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ff9d00;
+    font-size: 1.1em;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+.footer {
+    background: #f8f9fa;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    color: #666;
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
